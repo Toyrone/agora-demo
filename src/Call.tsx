@@ -10,8 +10,7 @@ function Call() {
   const [ appid, setAppid ] = useState('');
   const [ token, setToken ] = useState('');
   const [ channel, setChannel ] = useState('');
-  const {
-    localAudioTrack, localVideoTrack, leave, join, joinState, remoteUsers
+  const { localVideoTrack, leave, join, joinState, remoteUsers
   } = useAgora(client);
 
   return (
